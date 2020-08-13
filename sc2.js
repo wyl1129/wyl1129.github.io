@@ -1,7 +1,7 @@
 (function() {
 
   var image = { // back and front images
-    'back': { 'url':'https://www.taiwanlottery.com.tw/instant/images/142/IN1081211_preview_4361.jpg', 'img':null },
+    'back': { 'url':'https://www.mitsubishi-motors.com.tw/cmcpublished/color/grandlancer_03.jpg', 'img':null },
     'front': { 'url':'https://i2.wp.com/tyenews.com/wp-content/uploads/2019/01/photo-2.jpg?resize=855%2C312&ssl=1', 'img':null }
   };
   
