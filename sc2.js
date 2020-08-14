@@ -1,10 +1,27 @@
 (function() {
+  
+
+//   // var image = { // back and front images
+//   //   'back': { 'url' : './img/backimg.png' , 'img':null},
+//   //   'front':{ 'url' : "./img/frontimg.png" , 'img':null}
+//   };
+  function random_img(){
+    var imgnumber = Math.floor(Math.random()*2);
+    console.log(imgnumber);
+    var imgurl = [
+        './img/backimg.png',
+        './img/backimg2.png'
+    ];
+    return imgurl[imgnumber];
+    // document.write('<img src="'+imgurl[imgnumber]+'">');
+  }
 
   var image = { // back and front images
-    'back': { 'url' : './img/backimg.png' , 'img':null},
-    'front':{'url' : "./img/frontimg.png" , 'img':null}
-  };
-  
+    'back': { 'url' : random_img() , 'img':null},
+    'front':{ 'url' : "./img/frontimg.png" , 'img':null}
+  }
+
+
   var canvas = {'temp':null, 'draw':null}; // temp and draw canvases
   
   var mouseDown = false;
