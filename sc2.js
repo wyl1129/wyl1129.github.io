@@ -1,8 +1,8 @@
 (function() {
 
   var image = { // back and front images
-    'back': { 'url':'https://www.mitsubishi-motors.com.tw/cmcpublished/color/grandlancer_03.jpg', 'img':null },
-    'front': { 'url':'https://i2.wp.com/tyenews.com/wp-content/uploads/2019/01/photo-2.jpg?resize=855%2C312&ssl=1', 'img':null }
+    'back': { 'url' : './img/backimg.png' , 'img':null},
+    'front':{'url' : "./img/frontimg.png" , 'img':null}
   };
   
   var canvas = {'temp':null, 'draw':null}; // temp and draw canvases
