@@ -240,7 +240,7 @@ body {
 </div>
 <div class="promo-container" style="display:none;">
   <div class="promo-code"></div>
-  <a href="https://jennamolby.com" target="_blank" class="btn">Register Now</a>
+  <a href="https://5b0988e595225.cdn.sohucs.com/images/20190131/71d2873c01cb4d56b60defff92d904e1.gif" target="_blank" class="btn">中獎確認</a>
 </div>
  
  
@@ -255,6 +255,9 @@ var bg2 = 'https://i.imgur.com/N3n8tNt.png';
 var bg3 = 'https://i.imgur.com/4jiBY75.png';
 var bgArray= [ bg1, bg2, bg3 ];bgArray.push(bg3,bg3,bg3,bg3,bg3),
 selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
+// var image = new Image()
+// image.src = "https://i.imgur.com/EKWJXOR.png"
+// image.crossOrigin="anonymous"
 if (selectBG == bg1) {
     promoCode = 'Tesla Model S';
   } else if (selectBG == bg2) {
@@ -270,8 +273,9 @@ $('#promo').wScratchPad({
     // give real-time updates
     realtime    : true, 
     // The overlay image
+    //fg:  image,
     fg: './img/fubonfb.png' ,
-    // fg: 'https://i.imgur.com/EKWJXOR.png',
+    //  fg: 'https://i.imgur.com/EKWJXOR.png',
     // The cursor (coin) image
     cursor: 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
     // 迺https://i.imgur.com/724KFr9.png
@@ -282,7 +286,7 @@ $('#promo').wScratchPad({
           $('.promo-container').show();
           $('body').removeClass('not-selectable');
           $('.promo-code').html('恭喜獲得： ' + promoCode);
-          
+
         }
       }
  });
