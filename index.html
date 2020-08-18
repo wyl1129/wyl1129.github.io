@@ -253,7 +253,7 @@ var promoCode = '';
 var bg1 = 'https://i.imgur.com/oir0UKS.png';
 var bg2 = 'https://i.imgur.com/N3n8tNt.png';
 var bg3 = 'https://i.imgur.com/4jiBY75.png';
-var bgArray= [ bg1, bg2, bg3 ],
+var bgArray= [ bg1, bg2, bg3 ];bgArray.push(bg1),
 selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
 if (selectBG == bg1) {
     promoCode = 'Tesla Model S';
@@ -264,16 +264,17 @@ if (selectBG == bg1) {
   }
 $('#promo').wScratchPad({
     // the size of the eraser
-    size        : 70,    
+    size        : 50,    
     // the randomized scratch image   
     bg:  selectBG,
     // give real-time updates
     realtime    : true, 
     // The overlay image
     fg: './img/fubonfb.png' ,
-    // fg: 'https://i.imgur.com/4ZRrGNF.png',
+    // fg: 'https://i.imgur.com/EKWJXOR.png',
     // The cursor (coin) image
-    'cursor': 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
+    cursor: 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
+    // 迺https://i.imgur.com/724KFr9.png
     
     scratchMove: function (e, percent) {
         // Show the plain-text promo code and call-to-action when the scratch area is 50% scratched
