@@ -26,8 +26,8 @@
   }
 
   .card {
-    width: 2000px;
-    height: 800px;
+    width: 86px;
+    height: 119px;
     float: left;
     text-align: center;
     position: relative;
@@ -35,8 +35,8 @@
   }
 
   .cardMask {
-    width: 2000px;
-    height: 800px;
+    width: 86px;
+    height: 119px;
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     display: none;
@@ -166,10 +166,9 @@ body {
   user-select: none;
   width:100%;
 }
-/*刮刮卡圖片大小*/ 
-@media only screen and (max-width : 2000px) {
-  .scratchpad {width:1000px;height:400px;}
-  .scratch-container {width:1500px !important;}
+@media only screen and (max-width : 480px) {
+  .scratchpad {width:400px;height:396px;}
+  .scratch-container {width:400px !important;}
 }
  
 /* Custom, iPhone Retina */ 
@@ -251,9 +250,9 @@ body {
 <script type="text/javascript">
  
 var promoCode = '';
-var bg1 = 'https://i.imgur.com/hgQd4rN.png';
-var bg2 = 'https://i.imgur.com/hgQd4rN.png';
-var bg3 = 'https://i.imgur.com/hgQd4rN.png';
+var bg1 = 'https://i.imgur.com/oir0UKS.png';
+var bg2 = 'https://i.imgur.com/N3n8tNt.png';
+var bg3 = 'https://i.imgur.com/4jiBY75.png';
 var bgArray= [ bg1, bg2, bg3 ];bgArray.push(bg3,bg3,bg3,bg3,bg3),
 selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
 // var image = new Image()
@@ -268,14 +267,14 @@ if (selectBG == bg1) {
   }
 $('#promo').wScratchPad({
     // the size of the eraser
-    size        : 10,    
+    size        : 50,    
     // the randomized scratch image   
     bg:  selectBG,
     // give real-time updates
     realtime    : true, 
     // The overlay image
     //fg:  image,
-    fg: 'https://i.imgur.com/6y85mnP.png' ,
+    fg: './img/fubonfb.png' ,
     //  fg: 'https://i.imgur.com/EKWJXOR.png',
     // The cursor (coin) image
     cursor: 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
@@ -283,7 +282,7 @@ $('#promo').wScratchPad({
     
     scratchMove: function (e, percent) {
         // Show the plain-text promo code and call-to-action when the scratch area is 50% scratched
-        if ((percent > 80) && (promoCode != '')) {
+        if ((percent > 50) && (promoCode != '')) {
           $('.promo-container').show();
           $('body').removeClass('not-selectable');
           $('.promo-code').html('恭喜獲得： ' + promoCode);
